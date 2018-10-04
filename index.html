@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Munber inside of circles</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		.info-list {
+		  	counter-reset: item;
+		  	list-style-type: none;
+		}
+		.info-list li{
+			display: block;
+		}
+		.info-list li::before{
+			content: counter(item) "";
+			counter-increment: item;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			border: 1px solid #000;
+			display: inline-block;
+			text-align: center;
+			margin-right: 10px;
+			line-height: 25px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<ol class="info-list">
+	  <li>CPellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+	  </li>
+	  <li>CPellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+	  </li>
+	  <li>CPellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+	  </li>
+	  <li>CPellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+	  </li>
+	  <li>CPellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+	  </li>
+</ol>
+</body>
+</html>
